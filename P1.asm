@@ -1,8 +1,8 @@
 ; ---------------------------------
-;  AUTHOR: Díaz García, Rodrigo
+;  AUTHOR: D.G.Roman
 ;  DATE: 22 February 2017
 ;  ASSIGNMENT: P1
-;  REVISION: 1.2 - Corrected date
+;  REVISION: 1.1
 ; ---------------------------------
 .ORG 100AH
 ; ------------
