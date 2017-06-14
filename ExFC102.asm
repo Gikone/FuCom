@@ -17,7 +17,7 @@ Bucle:
 	 RNC
 	 CPI 30H
 	 ;JZ Final ; si 0 final
-	 JC Bucle 
+	; JC Bucle 
 	 ;JNZ Bucle ; si no es 0 bucle
 	 ;JMP Bucle ; si 0 vuelve a bucle
 	 ;CALL 0H ;rutina 044EH
