@@ -12,18 +12,32 @@ MOV B, A ;acumulador a B
 CALL 2Ch
 
 ;Teclado
-.ORG 2Ch ; Interrupcion 5.5
-
+.ORG 2Ch ; Interrupción 5.5
+IN 00
+MOV B,A
+IN 00H
+MOV C,A
 
 Bucle:
        RIM ;lectura mascara
 	 ANI 0010000B ;and
-	 JZ Bucle ; si 0 vuelve a bucle
-	 CALL 044EH ;rutina 044EH
+	 JNZ Bucle ; si no es 0 bucle
+	 ;JMP Bucle ; si 0 vuelve a bucle
+	 ;CALL 0H ;rutina 044EH
 MVI E, 0H ;cargar E
 CMP E ;comparacion
-JZ Final ; si 0 final
+;JZ Final ; si 0 final
 
 Final:
 	 RST 1
 	 HLT
+
+
+
+
+
+
+
+
+
+
