@@ -14,8 +14,6 @@ CALL 2Ch
 ;Teclado
 .ORG 2Ch ; Interrupción 5.5
 IN 00
-
-
 Bucle:
        RIM ;lectura mascara
 	 ANI 0010000B ;and
